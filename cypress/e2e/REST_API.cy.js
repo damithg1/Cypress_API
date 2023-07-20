@@ -191,7 +191,7 @@ describe('QA Test - REST-API', () => {
       })
   })
 
-  it("POST, PUT and DELETE endpoints verification", () => {
+  it("POST, PUT and DELETE endpoints verification - Negative scenario", () => {
 
     const requestBody = {
       name: "i17 pro max",
@@ -224,7 +224,7 @@ describe('QA Test - REST-API', () => {
         failOnStatusCode: false,
       })
       .then((response) => {
-        expect(response.status).to.eq(405) // The corect status code for POST metods should be 201, may be this can be an issue of the API
+        expect(response.status).to.eq(405)
         expect(response.body.error).to.eq('Method Not Allowed')
       })
     })
