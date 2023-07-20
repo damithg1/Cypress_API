@@ -86,7 +86,7 @@ describe('QA Test - REST-API', () => {
 
   //////////// POST, PUT and DELETE endpoints verification start here ////////////
 
-  it.only("POST, PUT and DELETE endpoints verification", () => {
+  it("POST, PUT and DELETE endpoints verification", () => {
 
     const requestBody = {
       name: "i17 pro max",
@@ -191,7 +191,7 @@ describe('QA Test - REST-API', () => {
       })
   })
 
-  it.only("POST, PUT and DELETE endpoints verification", () => {
+  it("POST, PUT and DELETE endpoints verification", () => {
 
     const requestBody = {
       name: "i17 pro max",
